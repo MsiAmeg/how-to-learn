@@ -1,3 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.link {
+  text-decoration: none;
+  color: #2f80ed;
+}
+
+.flex-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex-column {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
 .page {
   min-width: 1100px;
   /* мы ещё не умеем делать мобильную версию сайта, */
@@ -14,14 +35,102 @@
   min-height: 600px;
   max-height: 756px;
   /* выше установили ограничения для секции */
+  position: relative;
+  background: #f2f2f2;
+}
+.logo {
+  position: absolute;
 }
 
+.logo_place_header
+{
+  width: 228px;
+  height: 32px;
+  top: 30px;
+  left: 64px;
+}
+
+.header__title {
+  width: 730px;
+  height: auto;
+  font-size: 102px;
+  font-weight: 600;
+  line-height: 96px;
+  align-self: center;
+  margin-left: 64px;
+  z-index: 1;
+}
+
+.header__subtitle {
+  width: 388px;
+  height: auto;
+  position: absolute;
+  bottom: 30px;
+  left: 64px;
+  line-height: 25px;
+  font-size: 18px;
+  font-weight: normal;
+  z-index: 1;
+}
+
+.header__image-pic {
+ width: 765px;
+ height: 608px;
+ position: absolute;
+ bottom: 0;
+ right: 0;
+}
 /* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
 .header__square-pic {
   height: 568px;
   width: 568px;
+  background-color: #2f80ed;
+  position: absolute;
+  top: 64px;
+  right: 0;
 }
 
+
+.content {
+  width: 100%;
+  height: 100%;
+}
+
+
+.description {
+  justify-content: center;
+}
+.two-columns {
+  width: 80%;
+  margin: 100px 0;
+  justify-content: space-between;
+}
+.head {
+  width: 175px;
+}
+.brief {
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
+  color: #2f80ed;
+}
+.main-text {
+  width: 80%;
+  min-width: 784px;
+  justify-content: space-between;
+}
+.paragraph {
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+  margin-bottom: 30px;
+}
+.paragraph:last-child {
+  margin-bottom: 0;
+}
+.span {
+  font-weight: 600;
+}
 /* и элемента с модификатором вида ключ-значение */
 .table__cell_theme_dark {
   width: 200px;
